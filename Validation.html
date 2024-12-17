@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bus Pass</title>
+</head>
+<body>
+    <fieldset>
+        
+        <center><img src="./bus.jpeg" width="50"</center>
+    <h1>State Government Road Transports</h1>
+    <h2>General BusPass Application</h2>
+    </fieldset>
+    <fieldset>
+        <legend>Applicant Details</legend>
+        <form method="get" action="./Application.html" enctype="multipart/form-data">
+        <label for="Name">Name :</label>
+        <input type="text" id="Name" name="Name" minlength="8" maxlength="17" required placeholder="Name" autofocus> <br>
+        <label for="FatherName">Father's/Gaurdian Name :</label>
+        <input type="text" id="FatherName" name="FatherName" minlength="8" maxlength="16" required placeholder="Name" > <br>
+        <label>maximum characters:20</label><br>
+        <label for="DOB">Date Of Birth :</label>
+        <input type="date" id="DOB" name="DOB" required><br>
+        <label for="gender">Gender</label>
+        <input type="radio" id="gender" name="gender">Male
+        <input type="radio" id="gender" name="gender">Female
+        <br>
+        <label for="AadharNo"> Aadhar Number :</label>
+        <input type="tel" id="AadharNo" name="AadharNo" minlength="12" maxlength="16" required ><br>
+        <label for="whatsapp">WhatsApp</label>
+        <input id="whatsapp" type="tel" name="whatsapp" minlength="10" maxlength="10" required >
+        <br>
+        <label for="Mail">Email :</label>
+        <input id="Mail" type="text" pattern="[a-z_.]+@gmail\.com" required name="Mail" placeholder="Email" minlength="10" maxlength="30">
+        <br>
+        <label for="photo">Photo</label>
+        <input type="file" id="photo" name="photo" required accept=".jpeg,.png">
+        <br>
+    </fieldset>
+    <fieldset>
+        <legend>Residental Address</legend>
+        <label for="address"> Address :</label>
+        <textarea id="address" name="address" rows="10" cols="40"></textarea><br>
+        <label for="district" >District :</label>
+        <select required>
+            <option value="d0" selected disabled>--Select District--</option>
+            <option value="d1">Visakhapatnam</option>
+            <option value="d2" >Srikakulam</option>
+            <option value="d3"> Aruku</option>
+        </select><br>
+        <label for="mandal" >Mandal :</label>
+        <select required>
+            <option value="m1" selected disabled>Select Mandal</option>
+            <option value="m2">Visakhapatnam</option>
+            <option value="m3">Srikakulam</option>
+            <option value="m4"> Aruku</option>
+        </select><br>
+        <label for="village" >Village :</label>
+        <select required>
+            <option value="v1" selected disabled>Select Village</option>
+            <option value="v2">Visakhapatnam</option>
+            <option value="v3">Srikakulam</option>
+            <option value="v4"> Aruku</option>
+        </select><br>
+        <label for="pincode">Pincode</label>
+        <input type="text" id="pincode" name="pincode" required>
+    </fieldset>
+    <fieldset>
+        <legend>Pass Type Details</legend>
+        <label for="City" >City :</label>
+        <select required>
+            <option value="" selected disabled>Select city</option>
+            <option value="Vizianagaram">Vizianagaram</option>
+            <option value="Visakhapatnam">Visakhapatnam</option>
+        </select><br>
+        <label for="passtype" >Pass Type :</label>
+        <select required>
+            <option value="" selected disabled>Select Passtype</option>
+            <option value="p1">Greater Pass</option>
+            <option value="p2">General Ordinary Route Pass</option>
+            <option value="p3" >Ordinary Pass</option>
+            <option value="p4">Metro Express Pass</option>
+        </select>
+    </fieldset>
+    <fieldset>
+        <legend>Mode Of Payment and Pass Collection</legend>
+        <label>Payment Mode</label>
+        <select required>
+            <option value="s1" selected disabled>Select Payment Mode</option>
+            <option value="s2">payment at counter</option>
+        </select><br>
+        <label>Payment Mode</label>
+        <select required>
+            <option value="s3" selected disabled>Select Pass Delivery Mode</option>
+            <option value="s4">At Counter</option>
+        </select><br>
+        <label>Center At which you want to collect pass</label>
+        <select required>
+            <option value="s5" selected disabled></option>
+            <option value="s6">At Counter</option>
+        </select>
+    </fieldset>
+   <center><img src="./img.png" width="150"></center>
+   <center><input type="text" pattern="Swea6p" required></center><br>
+    <center><input type="submit" value="submit"></center>
+</form>
+</body>
+</html>
